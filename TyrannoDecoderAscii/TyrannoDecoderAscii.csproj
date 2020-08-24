@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C112540E-5497-4A90-AFA9-33D808835A49}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TyrannoDecoderAnsi</RootNamespace>
-    <AssemblyName>TyrannoDecoderAnsi</AssemblyName>
+    <RootNamespace>TyrannoDecoderAscii</RootNamespace>
+    <AssemblyName>TyrannoDecoderAscii</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>

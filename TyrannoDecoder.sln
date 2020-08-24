@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TyrannoDecoder", "TyrannoDecoder\TyrannoDecoder.csproj", "{AE286472-D01C-43BA-8C22-5E823A2B2EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TyrannoDecoderAnsi", "TyrannoDecoderAnsi\TyrannoDecoderAnsi.csproj", "{C112540E-5497-4A90-AFA9-33D808835A49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TyrannoDecoderAscii", "TyrannoDecoderAscii\TyrannoDecoderAscii.csproj", "{C112540E-5497-4A90-AFA9-33D808835A49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

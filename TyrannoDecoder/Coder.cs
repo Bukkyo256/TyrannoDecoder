@@ -28,12 +28,18 @@ namespace TyrannoDecoder
             if(args.Length == 0)
             {
                 string path = FindSaveFile();
+                if(path.Length == 0)
+                {
+                    Console.WriteLine("Could not find save file");
+                    Console.WriteLine("Press any key to close");
+                    Console.ReadKey();
+                    return;
+                }
                 FileInfo f = new FileInfo(path);
                 DumpSaves(f);
             }
             if (args.Length > 0)
             {
-                Console.WriteLine(args[0]);
                 FileInfo f = new FileInfo(args[0]);
                 string fileName = f.Name;
                 switch (f.Extension)
@@ -42,7 +48,15 @@ namespace TyrannoDecoder
                         string position = fileName.Replace(f.Extension, "");
                         int pos = int.Parse(position);
                         string save = File.ReadAllText(f.FullName, TextEncoding);
-                        InsertSave(FindSaveFile(), save, pos, true);
+                        string path = FindSaveFile();
+                        if (path.Length == 0)
+                        {
+                            Console.WriteLine("Could not find save file");
+                            Console.WriteLine("Press any key to close");
+                            Console.ReadKey();
+                            return;
+                        }
+                        InsertSave(path, save, pos, true);
                         break;
                     case ".sav":
                         DumpSaves(f);

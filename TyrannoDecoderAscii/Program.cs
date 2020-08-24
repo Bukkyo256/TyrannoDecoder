@@ -5,15 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TyrannoDecoder;
 
-namespace TyrannoDecoderAnsi
+namespace TyrannoDecoderAscii
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Coder c = new Coder();
+            Coder c = new Coder(Encoding.ASCII);
             c.ActionSelector(args);
-            Console.ReadKey();
         }
     }
 }

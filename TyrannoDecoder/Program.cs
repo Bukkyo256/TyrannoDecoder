@@ -21,7 +21,6 @@ namespace TyrannoDecoder
         {
             Coder c = new Coder();
             c.ActionSelector(args);
-            Console.ReadKey();
         }
     }
 }
